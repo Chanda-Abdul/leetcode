@@ -24,9 +24,8 @@ In total, this is 29523 integers that can be written using the digits array.
 ### Example 3:
 #### Input: `digits = ["7"], n = 8`
 #### Output: `1`
-#
 
-### Constraints:
+## Constraints:
 - `1 <= digits.length <= 9`
 - `digits[i].length == 1`
 - `digits[i] is a digit from '1' to '9'`.

@@ -9,19 +9,19 @@ Return a sorted list of `intervals` after all such removals.
  #
 
 ### Example 1:
-##### Input: 
+#### Input: 
 `intervals = [[0,2],[3,4],[5,7]], toBeRemoved = [1,6]`
-##### Output: 
+#### Output: 
 `[[0,1],[6,7]]`
 ### Example 2:
-##### Input: 
+#### Input: 
 `intervals = [[0,5]], toBeRemoved = [2,3]`
-##### Output: 
+#### Output: 
 `[[0,2],[3,5]]`
 ### Example 3:
-##### Input: 
+#### Input: 
 `intervals = [[-5,-4],[-3,-2],[1,2],[3,5],[8,9]], toBeRemoved = [-1,4]`
-##### Output: 
+#### Output: 
 `[[-5,-4],[-3,-2],[4,5],[8,9]]`
 
 ## Constraints:

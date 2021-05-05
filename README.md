@@ -4,3 +4,5 @@ A repository to practice leetcode problems
 
 🌴 = Amazon
 
+🤦 = Blind 75 Problem
+

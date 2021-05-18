@@ -6,3 +6,5 @@ A repository to practice leetcode problems
 
 👩‍🦯 = Blind 75 Problem
 
+🧙‍♀️ = mentor recommended
+

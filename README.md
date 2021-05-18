@@ -8,3 +8,5 @@ A repository to practice leetcode problems
 
 🧙‍♀️ = mentor recommended
 
+🔎 = Google
+

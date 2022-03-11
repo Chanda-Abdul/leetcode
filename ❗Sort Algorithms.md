@@ -58,7 +58,7 @@ insertionSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92])
 insertionSort([5, 4, 33, 2, 8]) 
 //[2, 4, 5, 8, 33]
 ````
-## Quick Sort
+## 🔍 Quick Sort
 ##### https://youtu.be/P6XGSKO2RzI
 <b>Quick sort</b> is an efficient, recursive divide-and-conquer approach to sorting an array. In this method, a `pivot` value is chosen in the original array. The array is then partitioned into two subarrays of values less than and greater than the `pivot` value. We then combine the result of recursively calling the <b>quick sort</b> algorithm on both sub-arrays. This continues until the base case of an empty or single-item array is reached, which we return. The unwinding of the recursive calls return us the sorted array.
 
@@ -95,7 +95,7 @@ function quickSort(array) {
 quickSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92])
 //should return an array that is unchanged except for order.
 ````
-## Merge Sort
+## 🔍 Merge Sort
 Another common intermediate sorting algorithm is <b>merge sort</b>. Like quick sort, <b>merge sort</b> also uses a divide-and-conquer, recursive methodology to sort an array. It takes advantage of the fact that it is relatively easy to sort two arrays as long as each is sorted in the first place. But we'll start with only one array as input, so how do we get to two sorted arrays from that? Well, we can recursively divide the original input in two until we reach the base case of an array with one item. A single-item array is naturally sorted, so then we can start combining. This combination will unwind the recursive calls that split the original array, eventually producing a final sorted array of all the elements. The steps of <b>merge sort</b>, then, are:
 
 1. Recursively split the input array in half until a sub-array with only one element is produced.

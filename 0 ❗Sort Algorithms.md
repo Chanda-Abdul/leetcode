@@ -1,5 +1,5 @@
 # ❗ Sort Algorithms
-[https://www.freecodecamp.org/learn/coding-interview-prep/algorithms](https://www.freecodecamp.org/learn/coding-interview-prep/algorithms)
+[https://www.freecodecamp.org/learn/coding-interview-prep/#algorithms](https://www.freecodecamp.org/learn/coding-interview-prep/#algorithms)
 
 Given an array of unsorted items, we want to be able to return a sorted array. We will see several different methods to do this and learn some tradeoffs between these different approaches. While most modern languages have built-in sorting methods for operations like this, it is still important to understand some of the common basic approaches and learn how they can be implemented.
 

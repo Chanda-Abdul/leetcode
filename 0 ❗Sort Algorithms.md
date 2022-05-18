@@ -95,6 +95,14 @@ function quickSort(array) {
 quickSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92])
 //should return an array that is unchanged except for order.
 ````
+### Problem Set
+|   |  |
+| :--- | :--- |
+| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0215.%20Kth%20Largest%20Element%20in%20an%20Array.md) | 
+| [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0283.%20%F0%9F%A7%99%E2%80%8D%E2%99%80%EF%B8%8F%20Move%20Zeroes.md) | 
+| [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0041.%20First%20Missing%20Positive.md) | 
+| [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | <s>[My Solution]()</s> | 
+| [Sort Colors](https://leetcode.com/problems/sort-colors/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0075.%20Sort%20Colors.md) | 
 ## 🔍 Merge Sort
 Another common intermediate sorting algorithm is <b>merge sort</b>. Like quick sort, <b>merge sort</b> also uses a divide-and-conquer, recursive methodology to sort an array. It takes advantage of the fact that it is relatively easy to sort two arrays as long as each is sorted in the first place. But we'll start with only one array as input, so how do we get to two sorted arrays from that? Well, we can recursively divide the original input in two until we reach the base case of an array with one item. A single-item array is naturally sorted, so then we can start combining. This combination will unwind the recursive calls that split the original array, eventually producing a final sorted array of all the elements. The steps of <b>merge sort</b>, then, are:
 
@@ -135,6 +143,15 @@ function mergeSort(array) {
 mergeSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92])
 //should return an array that is unchanged except for order.
 ````
+<!-- 
+### Problem Set
+|   |  |
+| :--- | :--- |
+| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0215.%20Kth%20Largest%20Element%20in%20an%20Array.md) | 
+| [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0283.%20%F0%9F%A7%99%E2%80%8D%E2%99%80%EF%B8%8F%20Move%20Zeroes.md) | 
+| [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0041.%20First%20Missing%20Positive.md) | 
+| [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | <s>[My Solution]()</s> | 
+| [Sort Colors](https://leetcode.com/problems/sort-colors/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0075.%20Sort%20Colors.md) |  -->
 ## Binary Search
 Binary search is an `O(log(n))` efficiency algorithm for searching a sorted array to find an element. It operates using the following steps:
 1. Find the `middle value` of a sorted array. If `value == target` `return (found it!)`.
@@ -205,3 +222,12 @@ binarySearch([0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
 binarySearch([0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 49, 70], 70); 
 //[13, 19, 22, 49, 70]
 ````
+<!--
+ ### Problem Set 
+|   |  |
+| :--- | :--- |
+| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0215.%20Kth%20Largest%20Element%20in%20an%20Array.md) | 
+| [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0283.%20%F0%9F%A7%99%E2%80%8D%E2%99%80%EF%B8%8F%20Move%20Zeroes.md) | 
+| [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0041.%20First%20Missing%20Positive.md) | 
+| [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | <s>[My Solution]()</s> | 
+| [Sort Colors](https://leetcode.com/problems/sort-colors/) | [My Solution](https://github.com/Chanda-Abdul/leetcode/blob/master/0075.%20Sort%20Colors.md) |  -->

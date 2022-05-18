@@ -8,7 +8,7 @@ Given an array of unsorted items, we want to be able to return a sorted array. W
 Here we will see <b>bubble sort</b>. The <b>bubble sort</b> method starts at the beginning of an unsorted array and <b>'bubbles up'</b> unsorted values towards the end, iterating through the array until it is completely sorted. It does this by comparing adjacent items and swapping them if they are out of order. The method continues looping through the array until no swaps occur at which point the array is sorted.
 
 This method requires multiple iterations through the array and for average and worst cases has <b>quadratic time complexity</b>. While simple, it is usually impractical in most situations.
-````
+````js
 function bubbleSort(array) {
   for (let i = 0; i < array.length; i++) {
     // -i because the largest element will be bubbled at the end so we don't have to compare.
@@ -24,7 +24,7 @@ function bubbleSort(array) {
 ````
 ## Selection Sort
 <b>Selection sort</b> works by selecting the minimum value in a list and swapping it with the first value in the list. It then starts at the second position, selects the smallest value in the remaining list, and swaps it with the second element. It continues iterating through the list and swapping elements until it reaches the end of the list. Now the list is sorted. <b>Selection sort</b> has quadratic time complexity in all cases.
-````
+````js
 function selectionSort(array) {
   for (let i = 0; i < array.length - 1; i++) {
     let min = i;
@@ -41,7 +41,7 @@ function selectionSort(array) {
 ````
 ## Insertion Sort
 This method works by building up a sorted array at the beginning of the list. It begins the sorted array with the first element. Then it inspects the next element and swaps it backwards into the sorted array until it is in sorted position. It continues iterating through the list and swapping new items backwards into the sorted portion until it reaches the end. This algorithm has quadratic time complexity in the average and worst cases.
-````
+````js
 function insertionSort(array) {
   for (let i = 0; i < array.length-1; i++) {
     for (let j = i+1; j < array.length; j++)  {
@@ -63,7 +63,7 @@ insertionSort([5, 4, 33, 2, 8])
 <b>Quick sort</b> is an efficient, recursive divide-and-conquer approach to sorting an array. In this method, a `pivot` value is chosen in the original array. The array is then partitioned into two subarrays of values less than and greater than the `pivot` value. We then combine the result of recursively calling the <b>quick sort</b> algorithm on both sub-arrays. This continues until the base case of an empty or single-item array is reached, which we return. The unwinding of the recursive calls return us the sorted array.
 
 <b>Quick sort</b> is a very efficient sorting method, providing `O(nlog(n))` performance on average. It is also relatively easy to implement. These attributes make it a popular and useful sorting method.
-````
+````js
 function quickSort(array) {
   //base case
   if (array.length === 1) return array;
@@ -102,8 +102,8 @@ Another common intermediate sorting algorithm is <b>merge sort</b>. Like quick s
 2. Merge each sorted sub-array together to produce the final sorted array.
 
 <b>Merge sort</b> is an efficient sorting method, with time complexity of `O(nlog(n))`. This algorithm is popular because it is performant and relatively easy to implement.
-````
 
+````js
 function merge(firstArr, secondArray) {
   //merge() which merges two sorted array into a single sorted array
   let i = 0, j = 0, mergedArr = [];
@@ -151,7 +151,8 @@ As you can see, you are successively halving an array, which gives you the `log(
 For example, `binarySearch([1,2,3,4,5,6,7], 5)` would return `[4,6,5]`.
 
 For this challenge, when halving, you MUST use `Math.floor()` when doing division: `Math.floor(x/2)`. This will give a consistent, testable path.
-````
+
+````js
 function binarySearch(searchList, value) {
   let arrayPath = [];
   let start = 0;
